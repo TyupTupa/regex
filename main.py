@@ -12,7 +12,7 @@ def get_info_from_url(url):
         return file
 
 
-def regex(html):
+def regex(file):
     reg_link = r"[\"\']https?\:\/\/[^\"\']*[\"\']"
     reg_file = r"(?<=\w\/)[^\/\\\n:\*\?\<\>|\+]+\.[a-zA-Z]{1,4}(?=[\?\/\"\'])"
     result_links = re.findall(reg_link, file)
